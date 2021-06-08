@@ -18,4 +18,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('saludo',[TestController::class, 'saludo']);
+Route::get('saludo/{nombre}',[TestController::class, 'saludo']);
