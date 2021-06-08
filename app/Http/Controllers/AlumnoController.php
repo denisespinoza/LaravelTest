@@ -6,7 +6,12 @@ use Illuminate\Http\Request;
 
 class AlumnoController extends Controller
 {
-    public function show() {
+    public function show() 
+    {
         return view('alumno.show');
+    }
+
+    public function edit() {
+        return 'Editar estudiante';
     }
 }
