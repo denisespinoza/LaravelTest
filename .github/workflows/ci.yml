@@ -35,8 +35,8 @@ jobs:
         DB_CONNECTION: sqlite
         DB_DATABASE: database/database.sqlite
       run: vendor/bin/phpunit
-    - uses: mr-smithers-excellent/docker-build-push@v3
-      name: Build & push Docker image
+    - name: Build & push Docker Image
+      uses: mr-smithers-excellent/docker-build-push@v4
       with:
         image: denisjev/laraveltest
         registry: docker.io
